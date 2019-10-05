@@ -20,7 +20,7 @@ export class AppComponent {
     this.initializeApp();
   }
 
-  async presentModal() {
+  async presentGettingStartedModal() {
     const modal = await this.modalController.create({
       component: ProfileModalPageComponent
     });
@@ -31,7 +31,7 @@ export class AppComponent {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
-      this.presentModal();
+      // this.presentModal();
     });
   }
 
