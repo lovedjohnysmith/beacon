@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-splash-page',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SplashPageComponent implements OnInit {
 
-  constructor() { }
+  constructor(public modalController: ModalController) { }
+
+  dismiss() {
+    this.modalController.dismiss({
+      'dismissed': true
+    });
+  };
 
   ngOnInit() {}
 

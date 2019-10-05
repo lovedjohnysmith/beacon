@@ -9,13 +9,16 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProfileModalPageComponent } from './profile-modal-page/profile-modal-page.component';
+import { SplashPageComponent } from './splash-page/splash-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProfileModalPageComponent
+    ProfileModalPageComponent,
+    SplashPageComponent
   ],
   entryComponents: [
+    SplashPageComponent,
     ProfileModalPageComponent
   ],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
