@@ -1,9 +1,14 @@
 <ion-app>
   <ion-header>
     <ion-toolbar>
-      <ion-title style="text-align: left !important;">
+      <ion-title>
         Beacon
       </ion-title>
+      <ion-buttons end>
+        <button ion-button icon-only (click)="presentModal()">
+          <ion-icon name="help"></ion-icon>
+        </button>
+      </ion-buttons>
     </ion-toolbar>
   </ion-header>
   <ion-router-outlet></ion-router-outlet>
